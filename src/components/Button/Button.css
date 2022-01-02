@@ -9,3 +9,9 @@
   background: linear-gradient(to bottom right, #682de2, #7b2fe4);
 }
 
+@media screen and (max-width: 800px) {
+  .btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

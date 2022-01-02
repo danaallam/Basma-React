@@ -10,13 +10,13 @@ const Card = ({ img, type, price, space, db, info, backup }) => {
         $<span className="cardSpan">{price}</span>
       </h2>
       <hr className="cardLine" />
-      <p className="titleText">{space}</p>
+      <p className="cardText">{space}</p>
       <hr className="cardLine" />
-      <p className="titleText">{db}</p>
+      <p className="cardText">{db}</p>
       <hr className="cardLine" />
-      <p className="titleText">{info}</p>
+      <p className="cardText">{info}</p>
       <hr className="cardLine" />
-      <p className="titleText">{backup}</p>
+      <p className="cardText">{backup}</p>
       <hr className="cardLine" />
       <button className="btn cardBtn">Sign Up</button>
     </div>

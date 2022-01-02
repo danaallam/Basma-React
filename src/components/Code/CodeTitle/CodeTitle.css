@@ -13,3 +13,26 @@
   width: 50px;
   color: #7c4fdf;
 }
+
+@media screen and (max-width:990px) {
+  .codeTitle {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .codeTitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .codeBox {
+    width: 85%;
+  }
+
+  .codeTitle {
+    font-size: 25px;
+  }
+}
+

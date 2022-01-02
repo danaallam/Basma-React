@@ -2,13 +2,12 @@
   display: flex;
   flex-direction: column;
   border: 1px solid;
-
 }
 .navbar {
-  width: 42%;
+  width: 45vw;
   border: 1px solid;
   align-self: flex-end;
-  margin-right: 16.5%;
+  margin-right: 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -30,4 +29,26 @@
 .navbar a:nth-child(3)::after {
   content: " 🢓";
   vertical-align: -45%;
+}
+
+@media screen and (max-width: 865px) {
+  .navbar {
+    width: 48vw;
+  }
+
+  .navbar a {
+    color: red;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .navbar {
+    width: 55vw;
+  }
+
+  .navbar a {
+    color: pink;
+    font-size: 14px;
+  }
 }

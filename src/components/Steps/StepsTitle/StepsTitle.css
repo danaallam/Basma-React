@@ -13,3 +13,23 @@
   font-size: 15px;
   color: white;
 }
+
+@media screen and (max-width: 910px) {
+  .stepsTitle {
+    font-size: 40px;
+  }
+
+  .stepsTitleText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .stepsTitle {
+    font-size: 30px;
+  }
+
+  .stepsTitleText {
+    font-size: 13px;
+  }
+}

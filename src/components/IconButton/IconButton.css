@@ -8,3 +8,10 @@
   box-shadow: 1px 1px 10px #b4b3b3;
   margin-right: 3%;
 }
+
+@media screen and (max-width: 800px) {
+  .iconBtn {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}

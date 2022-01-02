@@ -19,3 +19,10 @@
 .pricingLink{
     color: black;
 }
+
+@media screen and (max-width: 720px) {
+  .cardsDiv {
+    flex-direction: column;
+    padding: 0 20%;
+  }
+}

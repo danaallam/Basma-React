@@ -13,3 +13,10 @@
   background-color: #682de2;
   margin-right: 3%;
 }
+
+@media screen and (max-width: 800px) {
+  .infoImg {
+    width: 15px;
+    padding: 10px 12px;
+  }
+}
