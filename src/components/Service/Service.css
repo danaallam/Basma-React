@@ -18,3 +18,15 @@
   font-style: italic;
   font-size: 15px;
 }
+
+@media screen and (max-width: 650px) {
+  .serviceText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .serviceDiv {
+    padding: 2vh 5vw;
+  }
+}

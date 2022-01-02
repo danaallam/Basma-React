@@ -16,13 +16,24 @@
   text-align: center;
 }
 
-.pricingLink{
-    color: black;
+.pricingLink {
+  color: black;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 580px) {
+  .pricingDiv {
+    background-color: #f6f9fe;
+    padding: 2vh 5vw;
+  }
+
   .cardsDiv {
     flex-direction: column;
-    padding: 0 20%;
+    padding: 0 25%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardsDiv {
+    padding: 0 15%;
   }
 }

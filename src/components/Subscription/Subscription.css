@@ -32,3 +32,16 @@
 .subInput::placeholder {
   text-align: center;
 }
+
+@media screen and (max-width: 650px) {
+  .subInput {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .subDiv {
+    padding: 2vh 5vw;
+  }
+}
+

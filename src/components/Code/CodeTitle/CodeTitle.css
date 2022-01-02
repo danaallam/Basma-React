@@ -1,5 +1,5 @@
 .codeBox {
-  width: 60%;
+  width: 70%;
   margin: auto;
   border: 1px solid;
   text-align: center;
@@ -14,7 +14,7 @@
   color: #7c4fdf;
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width: 990px) {
   .codeTitle {
     font-size: 35px;
   }
@@ -35,4 +35,3 @@
     font-size: 25px;
   }
 }
-

@@ -6,3 +6,9 @@
   width: 200px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 650px) {
+  .playImg {
+    width: 120px;
+  } 
+}

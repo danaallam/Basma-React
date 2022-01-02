@@ -10,7 +10,6 @@
 .titleText {
   font-size: 15px;
   opacity: 0.7;
-  font-weight: bold;
 }
 
 @media screen and (max-width: 910px) {
@@ -30,5 +29,21 @@
 
   .titleText {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .titleText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .titleText {
+    font-size: 12px;
   }
 }

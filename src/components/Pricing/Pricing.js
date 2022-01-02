@@ -8,13 +8,13 @@ const Pricing = () => {
     <div className="pricingDiv">
       <CodeTitle
         title="BASMA code Challenge"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam pariatur iste quaerat quas nulla placeat distinctio ipsam."
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, est! Magni id doloremque alias perferendis excepturi enim odio, placeat possimus facere praesentium dolorem animi maxime officiis."
       />
       <div className="cardsDiv">
         <Card
           img="./assets/bike.png"
           type="BASIC"
-          price={49}
+          price="49"
           space="5GB Linux Web Space"
           db="5 MySQL Databases"
           info="24/7 Tech Support"
@@ -23,7 +23,7 @@ const Pricing = () => {
         <Card
           img="./assets/motorbike.png"
           type="PRO"
-          price={129}
+          price="129"
           space="10GB Linux Web Space"
           db="50 MySQL Databases"
           info="Unlimited Email"

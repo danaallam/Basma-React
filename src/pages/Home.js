@@ -5,7 +5,6 @@ import Intro from "../components/Intro/Intro";
 import Navbar from "../components/Navbar/Navbar";
 import Pricing from "../components/Pricing/Pricing";
 import Service from "../components/Service/Service";
-import Shapes from "../components/Shapes/Shapes";
 import Share from "../components/Share/Share";
 import Steps from "../components/Steps/Steps";
 import Subscription from "../components/Subscription/Subscription";
@@ -17,7 +16,7 @@ const Home = () => {
     <div>
       <Up />
       <Navbar />
-      <Shapes />
+      <div className="shapeBox"/>
       <Intro />
       <Code />
       <Tools />

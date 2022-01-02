@@ -9,3 +9,12 @@
 .stepImg {
   width: 65px;
 }
+
+@media screen and (max-width: 650px) {
+  .stepImg {
+    width: 40px;
+  }
+  .stepTitle {
+    font-size: 16px;
+  }
+}

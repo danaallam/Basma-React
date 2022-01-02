@@ -7,6 +7,18 @@
 
 .contactSubDiv {
   display: flex;
-  padding-top: 10vh;
+  padding-top: 5vh;
   border: 1px solid;
+}
+
+@media screen and (max-width: 580px) {
+  .contactDiv {
+    padding: 2vh 5vw;
+  }
+
+  .contactSubDiv {
+    padding-top: 2vh;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -20,40 +20,36 @@ const Code = () => {
         soluta illo consequuntur eos placeat."
       />
       <div className="iconsBox">
-        <div className="iconBox">
-          <CodeIcon
-            icon={MdOutlineTouchApp}
-            title="Fully functional"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
-          />
-          <CodeIcon
-            icon={MdOutlineFingerprint}
-            title="Fully functional"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
-          />
-          <CodeIcon
-            icon={MdCheckBoxOutlineBlank}
-            title="Fully functional"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
-          />
-        </div>
-        <div className="iconBox">
-          <CodeIcon
-            icon={IoLocationOutline}
-            title="Location Tracking"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
-          />
-          <CodeIcon
-            icon={VscSettingsGear}
-            title="Powerful Settings"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
-          />
-          <CodeIcon
-            icon={VscGlobe}
-            title="Multiple Language"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
-          />
-        </div>
+        <CodeIcon
+          icon={MdOutlineTouchApp}
+          title="Fully functional"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
+        />
+        <CodeIcon
+          icon={MdOutlineFingerprint}
+          title="Fully functional"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
+        />
+        <CodeIcon
+          icon={MdCheckBoxOutlineBlank}
+          title="Fully functional"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
+        />
+        <CodeIcon
+          icon={IoLocationOutline}
+          title="Location Tracking"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
+        />
+        <CodeIcon
+          icon={VscSettingsGear}
+          title="Powerful Settings"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
+        />
+        <CodeIcon
+          icon={VscGlobe}
+          title="Multiple Language"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sint nam. Reprehenderit doloremque velit fugiat."
+        />
       </div>
     </div>
   );

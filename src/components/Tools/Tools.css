@@ -4,3 +4,16 @@
   background-color: #f6f9fe;
   border: 1px solid;
 }
+
+@media screen and (max-width: 580px) {
+  .toolsDiv {
+    flex-direction: column-reverse;
+    padding: 2vh 5vw;
+    text-align: center;
+  }
+
+  .imageBox {
+    margin-top: 2%;
+    border: 1px solid;
+  }
+}

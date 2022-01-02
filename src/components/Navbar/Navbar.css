@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   border: 1px solid;
+  position: relative;
 }
+
 .navbar {
-  width: 45vw;
+  width: 50%;
   border: 1px solid;
   align-self: flex-end;
   margin-right: 10%;
@@ -14,11 +16,16 @@
 
 .navbar a {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   font-weight: 500;
   -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: black;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
 }
 
 .navbar a:hover {
@@ -31,11 +38,31 @@
   vertical-align: -45%;
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 1000px) {
   .navbar {
-    width: 48vw;
+    width: 55%;
+    margin-right: 5%;
   }
 
+  .navbar a {
+    color: green;
+    /* font-size: 17px; */
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .navbar {
+    width: 60%;
+    margin-right: 1%;
+  }
+
+  .navbar a {
+    color: yellow;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .navbar a {
     color: red;
     font-size: 15px;
@@ -43,12 +70,11 @@
 }
 
 @media screen and (max-width: 730px) {
-  .navbar {
-    width: 55vw;
+  .menu {
+    display: initial;
   }
 
-  .navbar a {
-    color: pink;
-    font-size: 14px;
+  .navbar {
+    display: none;
   }
 }

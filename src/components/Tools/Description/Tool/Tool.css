@@ -7,3 +7,9 @@
   width: 15px;
   margin-right: 2%;
 }
+
+@media screen and (max-width: 650px) {
+  .toolCheck {
+    width: 12px;
+  }
+}

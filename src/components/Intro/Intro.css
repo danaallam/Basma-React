@@ -3,3 +3,11 @@
   border: 1px solid;
   padding: 10vh 10vw;
 }
+
+@media screen and (max-width: 580px) {
+  .introBox {
+    flex-direction: column;
+    text-align: center;
+    padding: 2vh 5vw;
+  }
+}

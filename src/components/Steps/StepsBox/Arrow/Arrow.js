@@ -5,7 +5,7 @@ import "./Arrow.css";
 const Arrow = () => {
   return (
     <div className="arrowDiv">
-      <MdOutlineArrowForwardIos color="white" size={40}/>
+      <MdOutlineArrowForwardIos color="white" className="arrow"/>
     </div>
   );
 };

@@ -6,12 +6,21 @@
 .iconsBox {
   margin-top: 5vh;
   display: flex;
-  flex-direction: column;
-  border: 1px solid;
-
+  flex-wrap: wrap;
+  border: 1px solid red;
 }
 
 .iconBox {
   border: 1px solid;
   display: flex;
+}
+
+@media screen and (max-width: 580px) {
+  .codeDiv{
+    padding: 2vh 5vw;
+  }
+
+  .iconsBox {
+    margin-top: 2vh;
+  }
 }
