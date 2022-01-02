@@ -1,0 +1,15 @@
+.stepsTitleDiv {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.stepsTitle {
+  font-size: 45px;
+  color: white;
+}
+
+.stepsTitleText {
+  font-size: 15px;
+  color: white;
+}

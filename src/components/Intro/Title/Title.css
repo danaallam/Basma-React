@@ -1,0 +1,14 @@
+.titleIntro {
+  flex: 1.2;
+  border: 1px solid;
+}
+
+.title {
+  font-size: 58px;
+}
+
+.titleText {
+  font-size: 15px;
+  opacity: 0.7;
+  font-weight: bold;
+}

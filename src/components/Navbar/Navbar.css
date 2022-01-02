@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+
+}
+.navbar {
+  width: 42%;
+  border: 1px solid;
+  align-self: flex-end;
+  margin-right: 16.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
+
+.navbar a:hover {
+  color: lightblue;
+}
+
+.navbar a:nth-child(1)::after,
+.navbar a:nth-child(3)::after {
+  content: " 🢓";
+  vertical-align: -45%;
+}

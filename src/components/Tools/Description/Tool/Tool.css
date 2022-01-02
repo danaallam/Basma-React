@@ -1,0 +1,9 @@
+.toolDiv {
+  display: flex;
+  align-items: center;
+}
+
+.toolCheck {
+  width: 15px;
+  margin-right: 2%;
+}

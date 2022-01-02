@@ -1,0 +1,9 @@
+.iconDiv{
+  text-align: center;
+  border: 1px solid;
+}
+
+.icon {
+  font-size: 40px;
+  color: gray;
+}

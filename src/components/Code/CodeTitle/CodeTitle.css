@@ -1,0 +1,15 @@
+.codeBox {
+  width: 60%;
+  margin: auto;
+  border: 1px solid;
+  text-align: center;
+}
+
+.codeTitle {
+  font-size: 45px;
+}
+
+.codeLine {
+  width: 50px;
+  color: #7c4fdf;
+}

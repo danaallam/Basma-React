@@ -1,0 +1,6 @@
+.toolsDiv {
+  display: flex;
+  padding: 10vh 10vw;
+  background-color: #f6f9fe;
+  border: 1px solid;
+}

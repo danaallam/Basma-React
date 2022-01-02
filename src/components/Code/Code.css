@@ -1,0 +1,17 @@
+.codeDiv{
+  border: 1px solid;
+  padding: 10vh 10vw;
+}
+
+.iconsBox {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+
+}
+
+.iconBox {
+  border: 1px solid;
+  display: flex;
+}

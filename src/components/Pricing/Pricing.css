@@ -1,0 +1,21 @@
+.pricingDiv {
+  background-color: #f6f9fe;
+  padding: 10vh 10vw;
+}
+
+.cardsDiv {
+  display: flex;
+  border: 1px solid;
+  justify-content: center;
+}
+
+.pricingHelp {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.pricingLink{
+    color: black;
+}

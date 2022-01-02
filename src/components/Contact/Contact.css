@@ -1,0 +1,12 @@
+.contactDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 10vw;
+  background-color: #f6f9fe;
+}
+
+.contactSubDiv {
+  display: flex;
+  padding-top: 10vh;
+  border: 1px solid;
+}
