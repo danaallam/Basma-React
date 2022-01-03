@@ -1,5 +1,4 @@
 import React from "react";
-import "./ServiceTitle.css";
 
 const ServiceTitle = () => {
   return (

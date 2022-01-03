@@ -1,5 +1,4 @@
 import React from "react";
-import "./Share.css";
 import ShareDesc from "./ShareDesc/ShareDesc";
 
 const Share = () => {

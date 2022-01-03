@@ -2,7 +2,6 @@
   display: flex;
   padding: 10vh 10vw;
   background-color: #f6f9fe;
-  border: 1px solid;
 }
 
 @media screen and (max-width: 580px) {
@@ -14,6 +13,5 @@
 
   .imageBox {
     margin-top: 2%;
-    border: 1px solid;
   }
 }

@@ -1,5 +1,4 @@
 .codeDiv{
-  border: 1px solid;
   padding: 10vh 10vw;
 }
 
@@ -7,11 +6,9 @@
   margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 
 .iconBox {
-  border: 1px solid;
   display: flex;
 }
 

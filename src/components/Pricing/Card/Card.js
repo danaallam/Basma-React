@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import Popup from "../../Popup/Popup";
 import "./Card.css";
 
 const Card = ({ img, type, price, space, db, info, backup }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="cardDiv">
       <img src={img} alt={type} className="stepImg" />
@@ -18,7 +21,15 @@ const Card = ({ img, type, price, space, db, info, backup }) => {
       <hr className="cardLine" />
       <p className="cardText">{backup}</p>
       <hr className="cardLine" />
-      <button className="btn cardBtn">Sign Up</button>
+      <button
+        className="btn cardBtn"
+        onClick={() => {
+          setIsOpen(true);
+        }}
+      >
+        Sign Up
+      </button>
+      {isOpen ? <Popup close={() => setIsOpen(false)} /> : null}
     </div>
   );
 };

@@ -1,13 +1,11 @@
 .header {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
   position: relative;
 }
 
 .navbar {
   width: 50%;
-  border: 1px solid;
   align-self: flex-end;
   margin-right: 10%;
   display: flex;
@@ -44,10 +42,6 @@
     margin-right: 5%;
   }
 
-  .navbar a {
-    color: green;
-    /* font-size: 17px; */
-  }
 }
 
 @media screen and (max-width: 910px) {
@@ -57,14 +51,12 @@
   }
 
   .navbar a {
-    color: yellow;
     font-size: 17px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .navbar a {
-    color: red;
     font-size: 15px;
   }
 }

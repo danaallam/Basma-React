@@ -8,7 +8,6 @@
 .contactSubDiv {
   display: flex;
   padding-top: 5vh;
-  border: 1px solid;
 }
 
 @media screen and (max-width: 580px) {

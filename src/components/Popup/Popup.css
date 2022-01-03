@@ -1,0 +1,95 @@
+.popupDiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  z-index: 100;
+  width: 50%;
+  height: 70%;
+}
+
+.popupBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.popupClose {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  padding: 2%;
+  font-size: 30px;
+}
+
+.popupInput {
+  width: 100%;
+}
+
+.popupError {
+  color: red;
+  font-size: 15px;
+  margin-bottom: 2%;
+}
+
+.popupForm {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popupMsg {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 980px) {
+  .popupDiv {
+    width: 50%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .popupDiv {
+    width: 40%;
+    height: 50%;
+  }
+
+  .popupMsg {
+    font-size: 15px;
+  }
+
+  .popupError {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .popupDiv {
+    width: 50%;
+    height: 45%;
+  }
+
+  .popupMsg {
+    font-size: 14px;
+  }
+
+  .popupError {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .popupDiv {
+    height: 35%;
+  }
+}
