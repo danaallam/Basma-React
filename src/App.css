@@ -81,6 +81,12 @@
   }
 }
 
+@media screen and (max-width: 731px) {
+  .App {
+    padding: 8vh 3vw;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .shapeBox {
     height: 120vh;
@@ -114,3 +120,4 @@
     width: 200px;
   }
 }
+

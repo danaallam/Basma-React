@@ -14,18 +14,19 @@ const Popup = ({ close }) => {
   const [eEmail, setEEmail] = useState(" ");
   const [ePass, setEPass] = useState(" ");
   const [msg, setMsg] = useState("");
-  const formdata = new FormData();
-
-  formdata.append("first_name", fName);
-  formdata.append("last_name", lName);
-  formdata.append("email", email);
-  formdata.append("password", pass);
 
   const register = async () => {
+    const formdata = new FormData();
     setEFName("");
     setELName("");
     setEEmail("");
     setEPass("");
+
+    formdata.append("first_name", fName);
+    formdata.append("last_name", lName);
+    formdata.append("email", email);
+    formdata.append("password", pass);
+
     const res = await fetch("http://localhost:8000/api/user/register", {
       method: "POST",
       body: formdata,

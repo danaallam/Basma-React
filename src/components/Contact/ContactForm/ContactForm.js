@@ -5,7 +5,7 @@ import { IoIosSend } from "react-icons/io";
 
 const ContactForm = () => {
   return (
-    <form className="formDiv">
+    <form className="formDiv" onSubmit={(e) => e.preventDefault()}>
       <input type="text" placeholder="Name" className="subInput formInput" />
       <input type="text" placeholder="Email" className="subInput formInput" />
       <input type="text" placeholder="Subject" className="subInput formInput" />

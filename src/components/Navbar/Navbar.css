@@ -41,7 +41,6 @@
     width: 55%;
     margin-right: 5%;
   }
-
 }
 
 @media screen and (max-width: 910px) {
@@ -67,6 +66,12 @@
   }
 
   .navbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 731px) {
+  .menuDiv {
     display: none;
   }
 }
