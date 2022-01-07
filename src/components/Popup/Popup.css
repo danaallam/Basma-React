@@ -7,7 +7,8 @@
   padding: 50px;
   z-index: 100;
   width: 50%;
-  height: 70%;
+  height: 80%;
+  border-radius: 20px;
 }
 
 .popupBackground {
@@ -51,17 +52,9 @@
   margin-top: 5%;
 }
 
-@media screen and (max-width: 980px) {
-  .popupDiv {
-    width: 50%;
-    height: 60%;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .popupDiv {
-    width: 40%;
-    height: 50%;
+    height: 70%;
   }
 
   .popupMsg {
@@ -75,8 +68,7 @@
 
 @media screen and (max-width: 650px) {
   .popupDiv {
-    width: 50%;
-    height: 45%;
+    height: 60%;
   }
 
   .popupMsg {

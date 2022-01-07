@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ReactDom from "react-dom";
 import "./Popup.css";
 import { IoCloseCircleSharp } from "react-icons/io5";
 import Button from "../Button/Button";
+import ReCAPTCHA from "react-google-recaptcha";
+import { RECAPTCHA_SECRET_KEY } from "../ReCaptchaKey";
 
 const Popup = ({ close }) => {
   const [fName, setFName] = useState("");
@@ -14,29 +16,34 @@ const Popup = ({ close }) => {
   const [eEmail, setEEmail] = useState(" ");
   const [ePass, setEPass] = useState(" ");
   const [msg, setMsg] = useState("");
+  let recaptchaRef = useRef(null);
 
-  const register = async () => {
-    const formdata = new FormData();
+  const register = async (e) => {
+    e.preventDefault();
+    const recaptchaToken = await recaptchaRef.current.getValue();
+    recaptchaRef.current.reset();
+    const body = new FormData();
     setEFName("");
     setELName("");
     setEEmail("");
     setEPass("");
-
-    formdata.append("first_name", fName);
-    formdata.append("last_name", lName);
-    formdata.append("email", email);
-    formdata.append("password", pass);
-
+    console.log("recaptchaToken", recaptchaToken);
+    body.append("first_name", fName);
+    body.append("last_name", lName);
+    body.append("email", email);
+    body.append("password", pass);
     const res = await fetch("http://localhost:8000/api/user/register", {
       method: "POST",
-      body: formdata,
+      body,
       headers: {
         Accept: "application/json",
+        recaptchaToken,
       },
     });
     const data = await res.json();
-    console.log(data);
+    console.log("data", data);
     if (!data.errors) {
+      console.log("NO ERRORS");
       setFName("");
       setLName("");
       setEmail("");
@@ -46,6 +53,7 @@ const Popup = ({ close }) => {
         close();
       }, 2000);
     } else {
+      console.log("ERRORS");
       if (data.errors.first_name) {
         setEFName(data.errors.first_name[0]);
       }
@@ -59,6 +67,7 @@ const Popup = ({ close }) => {
         setEPass(data.errors.password[0]);
       }
     }
+    recaptchaRef.current.reset();
   };
 
   return ReactDom.createPortal(
@@ -67,7 +76,7 @@ const Popup = ({ close }) => {
       <div className="popupDiv">
         <IoCloseCircleSharp onClick={close} className="popupClose" />
         <h2 className="popupTitle">Register</h2>
-        <form className="popupForm" onSubmit={(e) => e.preventDefault()}>
+        <form className="popupForm">
           <input
             value={fName}
             onChange={(e) => setFName(e.target.value)}
@@ -100,6 +109,7 @@ const Popup = ({ close }) => {
             className="subInput formInput popupInput"
           />
           <span className="popupError">{ePass}</span>
+          <ReCAPTCHA ref={recaptchaRef} sitekey={RECAPTCHA_SECRET_KEY} />
           <Button title="Register" click={register} />
           <span className="popupMsg">{msg}</span>
         </form>
