@@ -2,11 +2,11 @@ import React from "react";
 import IconButton from "../../../IconButton/IconButton";
 import "./Feature.css";
 
-const Feature = ({ icon, text }) => {
+const Feature = ({ icon, text, eng }) => {
   return (
-    <div className="featureDiv">
-      <IconButton icon={icon} />
-      <span className="titleText">{text}</span>
+    <div className={eng ? "featureDiv" : "featureDivA"}>
+      <IconButton icon={icon} eng={eng} />
+      <span className={eng ? "titleText" : "titleTextA"}>{text}</span>
     </div>
   );
 };

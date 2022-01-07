@@ -1,11 +1,21 @@
-.toolDiv {
+.toolDiv,
+.toolDivA {
   display: flex;
   align-items: center;
 }
 
-.toolCheck {
+.toolDivA {
+  flex-direction: row-reverse;
+}
+
+.toolCheck,
+.toolCheckA {
   width: 15px;
   margin-right: 2%;
+}
+
+.toolCheckA {
+  margin-left: 2%;
 }
 
 @media screen and (max-width: 650px) {

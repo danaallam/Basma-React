@@ -3,17 +3,22 @@ import CodeTitle from "../Code/CodeTitle/CodeTitle";
 import Card from "./Card/Card";
 import "./Pricing.css";
 
-const Pricing = () => {
+const Pricing = ({ eng }) => {
   return (
     <div className="pricingDiv">
       <CodeTitle
-        title="BASMA code Challenge"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, est! Magni id doloremque alias perferendis excepturi enim odio, placeat possimus facere praesentium dolorem animi maxime officiis."
+        title={eng ? "BASMA code Challenge" : "Basma تحدي الكود"}
+        text={
+          eng
+            ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, est! Magni id doloremque alias perferendis excepturi enim odio, placeat possimus facere praesentium dolorem animi maxime officiis."
+            : "هذه الأفكار المغلوطة حول استنكار أن نستشعره بورة أ عقلانة ومنقية فعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو للم ولكن تجة لروف ما قد تكم اسعده فيا نتحله منكد وي."
+        }
       />
-      <div className="cardsDiv">
+      <div className={eng ? "cardsDiv" : "cardsDivA"}>
         <Card
+          eng={eng}
           img="./assets/bike.png"
-          type="BASIC"
+          type={eng ? "BASIC" : "أساسي"}
           price="49"
           space="5GB Linux Web Space"
           db="5 MySQL Databases"
@@ -21,8 +26,9 @@ const Pricing = () => {
           backup="Daily Backups"
         />
         <Card
+          eng={eng}
           img="./assets/motorbike.png"
-          type="PRO"
+          type={eng ? "PRO" : "طليعة"}
           price="129"
           space="10GB Linux Web Space"
           db="50 MySQL Databases"
@@ -31,9 +37,9 @@ const Pricing = () => {
         />
       </div>
       <p className="pricingHelp">
-        Not sure what to choose?{" "}
+        {eng ? "Not sure what to choose? " : "لست متأكدا ماذا تختار؟"}
         <a href="#" className="pricingLink">
-          Contact Us
+          {eng ? "Contact Us": "اتصل بنا"}
         </a>
       </p>
     </div>

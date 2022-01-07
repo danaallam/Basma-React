@@ -8,6 +8,10 @@
   text-align: left !important;
 }
 
+.formInputA::placeholder {
+  text-align: right !important;
+}
+
 @media screen and (max-width: 580px) {
   .formDiv {
     margin-top: 2%;

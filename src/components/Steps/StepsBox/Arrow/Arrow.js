@@ -1,11 +1,12 @@
 import React from "react";
-import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
 import "./Arrow.css";
 
-const Arrow = () => {
+const Arrow = ({eng}) => {
   return (
     <div className="arrowDiv">
-      <MdOutlineArrowForwardIos color="white" className="arrow"/>
+      {eng ? <MdOutlineArrowForwardIos color="white" className="arrow"/>:
+      <MdOutlineArrowBackIos color="white" className="arrow"/>}
     </div>
   );
 };

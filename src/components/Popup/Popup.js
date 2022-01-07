@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 import ReCAPTCHA from "react-google-recaptcha";
 import { RECAPTCHA_SECRET_KEY } from "../ReCaptchaKey";
 
-const Popup = ({ close }) => {
+const Popup = ({ close, eng }) => {
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");
@@ -75,42 +75,52 @@ const Popup = ({ close }) => {
       <div className="popupBackground" />
       <div className="popupDiv">
         <IoCloseCircleSharp onClick={close} className="popupClose" />
-        <h2 className="popupTitle">Register</h2>
+        <h2 className={eng ? "popupTitle" : "popupTitleA"}>
+          {eng ? "Register" : "تسجيل"}
+        </h2>
         <form className="popupForm">
           <input
             value={fName}
             onChange={(e) => setFName(e.target.value)}
             type="text"
-            placeholder="Fisrt Name"
-            className="subInput formInput popupInput"
+            placeholder={eng ? "Fisrt Name" : "الاسم الاول"}
+            className={
+              eng ? "subInput formInput popupInput" : "subInput formInputA"
+            }
           />
           <span className="popupError">{eFName}</span>
           <input
             value={lName}
             onChange={(e) => setLName(e.target.value)}
             type="text"
-            placeholder="Last Name"
-            className="subInput formInput popupInput"
+            placeholder={eng ? "Last Name" : "الكنية"}
+            className={
+              eng ? "subInput formInput popupInput" : "subInput formInputA"
+            }
           />
           <span className="popupError">{eLName}</span>
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="text"
-            placeholder="Email"
-            className="subInput formInput popupInput"
+            placeholder={eng ? "Email" : "البريد الإلكتروني"}
+            className={
+              eng ? "subInput formInput popupInput" : "subInput formInputA"
+            }
           />
           <span className="popupError">{eEmail}</span>
           <input
             value={pass}
             onChange={(e) => setPass(e.target.value)}
             type="password"
-            placeholder="Password"
-            className="subInput formInput popupInput"
+            placeholder={eng ? "Password" : "كلمه السر"}
+            className={
+              eng ? "subInput formInput popupInput" : "subInput formInputA"
+            }
           />
           <span className="popupError">{ePass}</span>
           <ReCAPTCHA ref={recaptchaRef} sitekey={RECAPTCHA_SECRET_KEY} />
-          <Button title="Register" click={register} />
+          <Button title={eng ? "Register" : "تسجيل"} click={register} />
           <span className="popupMsg">{msg}</span>
         </form>
       </div>

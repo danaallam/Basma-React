@@ -3,7 +3,8 @@
   padding: 11vh 3vw;
 }
 
-.shapeBox {
+.shapeBox,
+.shapeBoxA {
   position: absolute;
   right: 3vw;
   top: 8vh;
@@ -12,6 +13,13 @@
   width: 100%;
   height: 165vh;
   background: #682de2;
+}
+
+.shapeBoxA {
+  left: 3vw;
+  width: unset;
+  z-index: -1;
+  clip-path: polygon(0 0, 55% 0, 30% 49%, 0 35%);
 }
 
 .img {
@@ -64,7 +72,8 @@
 }
 
 @media screen and (max-width: 800px) {
-  .shapeBox {
+  .shapeBox,
+  .shapeBoxA {
     height: 150vh;
   }
 
@@ -88,7 +97,8 @@
 }
 
 @media screen and (max-width: 650px) {
-  .shapeBox {
+  .shapeBox,
+  .shapeBoxA {
     height: 120vh;
   }
 
@@ -111,7 +121,11 @@
     width: 100%;
     height: 165vh;
   }
-  
+
+  .shapeBoxA {
+    clip-path: polygon(0 0, 60% 0, 30% 39%, 0 25%);
+  }
+
   .img1 {
     width: 130px;
   }
@@ -120,4 +134,3 @@
     width: 200px;
   }
 }
-

@@ -1,4 +1,10 @@
-.infoDiv{
-    flex: 1;
-    padding-right:10%;
+.infoDiv,
+.infoDivA {
+  flex: 1;
+  padding-right: 10%;
+}
+
+.infoDivA {
+  padding-left: 10%;
+  padding-right: 0;
 }

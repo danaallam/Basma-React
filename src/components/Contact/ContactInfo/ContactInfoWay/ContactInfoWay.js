@@ -1,11 +1,11 @@
 import React from "react";
 import "./ContactInfoWay.css";
 
-const ContactInfoWay = ({ img, text }) => {
+const ContactInfoWay = ({ img, text, eng }) => {
   return (
-    <div className="infoWayDiv">
-      <img src={img} className="infoImg" />
-      <span className="titleText">{text}</span>
+    <div className={eng ? "infoWayDiv" : "infoWayDivA"}>
+      <img src={img} className={eng ? "infoImg": "infoImgA"} />
+      <span className={eng ? "titleText": "titleTextA"}>{text}</span>
     </div>
   );
 };

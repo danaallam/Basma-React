@@ -3,9 +3,14 @@
   padding: 10vh 10vw;
 }
 
-.cardsDiv {
+.cardsDiv,
+.cardsDivA {
   display: flex;
   justify-content: center;
+}
+
+.cardsDivA {
+  flex-direction: row-reverse;
 }
 
 .pricingHelp {
@@ -25,14 +30,16 @@
     padding: 2vh 5vw;
   }
 
-  .cardsDiv {
+  .cardsDiv,
+  .cardsDivA {
     flex-direction: column;
     padding: 0 25%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .cardsDiv {
+  .cardsDiv,
+  .cardsDivA {
     padding: 0 15%;
   }
 }

@@ -2,13 +2,24 @@
   flex: 1.2;
 }
 
+.titleIntroA {
+  flex: 1.2;
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
 .title {
   font-size: 58px;
 }
 
-.titleText {
+.titleText,
+.titleTextA {
   font-size: 15px;
   opacity: 0.7;
+}
+
+.titleTextA {
+  text-align: right;
 }
 
 @media screen and (max-width: 910px) {
@@ -16,7 +27,8 @@
     font-size: 40px;
   }
 
-  .titleText {
+  .titleText,
+  .titleTextA {
     font-size: 14px;
   }
 }
@@ -26,7 +38,8 @@
     font-size: 30px;
   }
 
-  .titleText {
+  .titleText,
+  .titleTextA {
     font-size: 13px;
   }
 }
@@ -36,13 +49,15 @@
     font-size: 25px;
   }
 
-  .titleText {
+  .titleText,
+  .titleTextA {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 370px) {
-  .titleText {
+  .titleText,
+  .titleTextA {
     font-size: 12px;
   }
 }

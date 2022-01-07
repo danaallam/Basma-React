@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Popup from "../../Popup/Popup";
 import "./Card.css";
 
-const Card = ({ img, type, price, space, db, info, backup }) => {
+const Card = ({ img, type, price, space, db, info, backup, eng }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -27,9 +27,9 @@ const Card = ({ img, type, price, space, db, info, backup }) => {
           setIsOpen(true);
         }}
       >
-        Sign Up
+        {eng ? "Sign Up" : "اشترك"}
       </button>
-      {isOpen ? <Popup close={() => setIsOpen(false)} /> : null}
+      {isOpen ? <Popup close={() => setIsOpen(false)} eng={eng} /> : null}
     </div>
   );
 };

@@ -4,8 +4,13 @@
   text-align: center;
 }
 
-.codeTitle {
+.codeTitle,
+.codeTitleA {
   font-size: 45px;
+}
+
+.codeTitleA {
+  text-align: right;
 }
 
 .codeLine {
@@ -14,13 +19,14 @@
 }
 
 @media screen and (max-width: 990px) {
-  .codeTitle {
+  .codeTitle,
+  .codeTitleA {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 910px) {
-  .codeTitle {
+  .codeTitle, .codeTitleA {
     font-size: 30px;
   }
 }
@@ -30,7 +36,8 @@
     width: 85%;
   }
 
-  .codeTitle {
+  .codeTitle,
+  .codeTitleA {
     font-size: 25px;
   }
 }

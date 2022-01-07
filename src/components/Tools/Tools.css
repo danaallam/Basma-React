@@ -3,6 +3,9 @@
   padding: 10vh 10vw;
   background-color: #f6f9fe;
 }
+.imageBoxA {
+  margin-right: 5%;
+}
 
 @media screen and (max-width: 580px) {
   .toolsDiv {

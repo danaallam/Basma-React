@@ -1,12 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
+import LanguageContextProvider from "./context/LanguageContext";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <LanguageContextProvider>
+      <div className="App">
+        <Home />
+      </div>
+    </LanguageContextProvider>
   );
 }
 

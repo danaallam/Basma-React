@@ -2,10 +2,14 @@
   padding: 10vh 10vw;
 }
 
-.iconsBox {
+.iconsBox, .iconsBoxA {
   margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
+}
+
+.iconsBoxA {
+  flex-direction: row-reverse;
 }
 
 .iconBox {

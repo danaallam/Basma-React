@@ -3,11 +3,11 @@ import './Steps.css'
 import StepsBox from './StepsBox/StepsBox'
 import StepsTitle from './StepsTitle/StepsTitle'
 
-const Steps = () => {
+const Steps = ({eng}) => {
     return (
         <div className='stepsDiv'>
-            <StepsTitle />
-            <StepsBox/>
+            <StepsTitle eng={eng}/>
+            <StepsBox eng={eng}/>
         </div>
     )
 }

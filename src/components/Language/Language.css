@@ -1,0 +1,6 @@
+.lang {
+  display: flex;
+  position: fixed;
+  left: 3vw;
+  bottom: 3vh;
+}

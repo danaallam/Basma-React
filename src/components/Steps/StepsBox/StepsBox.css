@@ -1,4 +1,8 @@
-.stepsBoxDiv {
+.stepsBoxDiv, .stepsBoxDivA {
   display: flex;
   margin-top: 5%;
+}
+
+.stepsBoxDivA {
+  flex-direction: row-reverse;
 }

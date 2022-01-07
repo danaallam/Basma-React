@@ -1,3 +1,8 @@
-.iconBoxDiv {
+.iconBoxDiv,
+.iconBoxDivA {
   display: flex;
+}
+
+.iconBoxDivA {
+  flex-direction: row-reverse;
 }

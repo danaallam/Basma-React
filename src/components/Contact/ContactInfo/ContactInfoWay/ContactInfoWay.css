@@ -1,10 +1,14 @@
-.infoWayDiv {
+.infoWayDiv, .infoWayDivA {
   display: flex;
   align-items: center;
   margin-bottom: 3%;
 }
 
-.infoImg {
+.infoWayDivA {
+  flex-direction: row-reverse;
+}
+
+.infoImg, .infoImgA {
   width: 20px;
   padding: 11px;
   border-radius: 5px;
@@ -14,15 +18,19 @@
   margin-right: 3%;
 }
 
+.infoImgA {
+  margin-left: 3%;
+}
+
 @media screen and (max-width: 800px) {
-  .infoImg {
+  .infoImg, .infoImgA {
     width: 15px;
     padding: 10px 12px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .infoImg {
+  .infoImg, .infoImgA {
     width: 11px;
     padding: 7px;
   }

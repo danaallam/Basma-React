@@ -1,6 +1,11 @@
-.introBox {
+.introBox,
+.introBoxA {
   display: flex;
   padding: 10vh 10vw;
+}
+
+.introBoxA {
+  flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 580px) {

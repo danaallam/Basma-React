@@ -2,13 +2,13 @@ import React from "react";
 import Desc from "./Description/Desc";
 import "./Tools.css";
 
-const Tools = () => {
+const Tools = ({ eng }) => {
   return (
     <div className="toolsDiv">
       <div className="imageBox">
         <img src="assets/thumb-2 (1).png" alt="mobile-pic" className="img1" />
       </div>
-      <Desc />
+      <Desc eng={eng} />
     </div>
   );
 };

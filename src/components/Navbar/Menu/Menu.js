@@ -1,26 +1,26 @@
 import React from "react";
 import "./Menu.css";
 
-const Menu = ({ setMenu }) => {
+const Menu = ({ setMenu, eng }) => {
   return (
     <div className="menuDiv">
       <div onClick={() => setMenu(false)}>
-        <li>Home</li>
+        <li>{eng ? "Home" : "الصفحة الرئيسية"}</li>
       </div>
       <div onClick={() => setMenu(false)}>
-        <li>Features</li>
+        <li>{eng ? "Features" : "سمات"}</li>
       </div>
       <div onClick={() => setMenu(false)}>
-        <li>Page</li>
+        <li>{eng ? "Page" : "الصفحة"}</li>
       </div>
       <div onClick={() => setMenu(false)}>
-        <li>Screenshots</li>
+        <li>{eng ? "Screenshots" : "لقطات"}</li>
       </div>
       <div onClick={() => setMenu(false)}>
-        <li>Pricing</li>
+        <li>{eng ? "Pricing" : "التسعير"}</li>
       </div>
       <div onClick={() => setMenu(false)}>
-        <li>Contact</li>
+        <li>{eng ? "Contact" : "تواصل معنا"}</li>
       </div>
     </div>
   );

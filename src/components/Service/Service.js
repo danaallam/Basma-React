@@ -3,10 +3,10 @@ import PlayStore from "./PlayStore/PlayStore";
 import "./Service.css";
 import ServiceTitle from "./ServiceTitle/ServiceTitle";
 
-const Service = () => {
+const Service = ({ eng }) => {
   return (
     <div className="serviceDiv">
-      <ServiceTitle />
+      <ServiceTitle eng={eng} />
       <div className="servicePlayDiv">
         <PlayStore
           img="./assets/google-play.png"
@@ -18,7 +18,9 @@ const Service = () => {
         />
       </div>
       <p className="serviceText">
-        * Available on iPhone, iPad and all Android devices
+        {eng
+          ? "* Available on iPhone, iPad and all Android devices"
+          : "iPhone و iPad وجميع أجهزة Android متوفر على أجهزة*"}
       </p>
     </div>
   );

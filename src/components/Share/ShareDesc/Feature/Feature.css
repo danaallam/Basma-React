@@ -1,5 +1,10 @@
-.featureDiv {
+.featureDiv,
+.featureDivA {
   display: flex;
   align-items: flex-start;
   margin-bottom: 3%;
+}
+
+.featureDivA {
+  flex-direction: row-reverse;
 }
